@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hackerrank Problemas", "Hackerrank Problemas\Hackerrank Problemas.csproj", "{5F8AD9EC-9F68-419D-903E-78B50E80EF9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stdin And Stdout 1", "Stdin And Stdout 1\Stdin And Stdout 1.csproj", "{4905F079-1E6C-41B7-8662-0355E268FEB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stdin And Stdout 1", "Stdin And Stdout 1\Stdin And Stdout 1.csproj", "{4905F079-1E6C-41B7-8662-0355E268FEB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stdin And Stdout 2", "Stdin And Stdout 2\Stdin And Stdout 2.csproj", "{A0D3DF21-186B-427C-9EC9-B7F9774CDADB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4905F079-1E6C-41B7-8662-0355E268FEB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4905F079-1E6C-41B7-8662-0355E268FEB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4905F079-1E6C-41B7-8662-0355E268FEB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0D3DF21-186B-427C-9EC9-B7F9774CDADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0D3DF21-186B-427C-9EC9-B7F9774CDADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0D3DF21-186B-427C-9EC9-B7F9774CDADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0D3DF21-186B-427C-9EC9-B7F9774CDADB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
