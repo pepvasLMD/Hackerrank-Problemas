@@ -1,0 +1,42 @@
+﻿Task
+
+Java has 8 primitive data types; char, boolean, byte, short, int, long, float, and double. For this exercise, we'll work with the primitives used to hold integer values (byte, short, int, and long):
+
+A byte is an 8-bit signed integer.
+A short is a 16-bit signed integer.
+An int is a 32-bit signed integer.
+A long is a 64-bit signed integer.
+Given an input integer, you must determine which primitive data types are capable of properly storing that input.
+
+Input Format
+
+The first line contains an integer, T, denoting the number of test cases.
+Each test case, T, is comprised of a single line with an integer, n, which can be arbitrarily large or small.
+
+INICIO
+
+Variables
+	int: T
+	long: n
+
+Leer T
+
+Mientras T > 0
+	
+	Leer n 
+
+	Escribir("n can be fitted in:")
+
+	Si n >=0 && n <= 255
+		Escribir("* byte")
+
+	Si n >= -32768 && n <= 32767
+		Escribir("* short")
+
+	Si n >= -2147483648 && n <= 2147483647
+		Escribir("* int")
+
+	Si n >= -9223372036854775808 && n <= 9223372036854775807
+		Escribir("* long")
+
+	T--
