@@ -6,9 +6,9 @@ namespace If_Else
     {
         static void Main(string[] args)
         {
-            int numero;
+            byte numero;
 
-            numero = Convert.ToInt32(Console.ReadLine());
+            numero = Convert.ToByte(Console.ReadLine());
 
             if (numero % 2 != 0)
             {

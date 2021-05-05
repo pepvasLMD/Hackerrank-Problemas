@@ -1,0 +1,34 @@
+﻿Task
+Given an integer, , perform the following conditional actions:
+
+If  is odd, print Weird
+If  is even and in the inclusive range of 2 to 5, print Not Weird
+If  is even and in the inclusive range of 6 to 20, print Weird
+If  is even and greater than 20, print Not Weird
+Complete the stub code provided in your editor to print whether or not  is weird.
+
+
+INICIO
+1.Pedir el entero
+2. Determinar si el número es impar
+3. Mostrar el mensaje correspondiente
+FIN
+
+INICIO
+Variables:
+	byte: numero
+
+Leer (numero)
+Si numero % 2 != 0
+	Escribir("Weird")
+Si no
+	Si numero > 1 && numero < 5
+		Escribrir ("Not weird")
+
+	Si numero > 5 && numero < 21
+		Escribir ("Weird")
+
+	Si numero > 20
+		Escribir("Not Weird")
+
+FIN
