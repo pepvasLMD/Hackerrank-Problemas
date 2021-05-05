@@ -1,0 +1,19 @@
+﻿Task
+Given an integer, N, print its first 10 multiples. Each multiple N x i (where 1 <= i <= 10) should be printed on a new line in the form: N x i = result.
+
+
+INICIO
+
+Variables:
+	byte: i, N
+
+Leer(N)
+
+Si N > 1 && N<= 20
+
+Para (i = 1) Hasta (i<= 10) Con (i=i+1)
+	Escribir("N x i = resultado")
+
+FinPara
+
+FIN
