@@ -57,7 +57,7 @@ Variables
 	string divide[]
 	bool isSort
 
-divide[] = divideChain(s)
+divide[] = divideChain(s, k)
 
 hacer:
 	i = i + 1
