@@ -1,0 +1,80 @@
+﻿Task
+
+Given a string, s, and an integer, k, complete the function so that it finds the lexicographically smallest and largest substrings of length k.
+
+Function Description
+
+Complete the getSmallestAndLargest function in the editor below.
+
+getSmallestAndLargest has the following parameters:
+
+string s: a string
+int k: the length of the substrings to find
+
+Returns
+
+string: the string ' + "\n" + ' where and are the two substrings
+
+Input Format
+
+The first line contains a string denoting s.
+The second line contains an integer denoting k.
+
+Constraints
+
+1 <= s <= 1000
+
+s consists of English alphabetic letters only (i.e., [a-zA-Z]).
+
+
+divideChain
+
+INICIO
+
+Variables
+	string s
+	short k, i
+	string result[]
+
+Dimension result[s.length - (k -1)]
+
+Para(i=0) Hasta(i< result.length) Con(i=i+1)
+	result[i] = s.substring(i, k)
+
+regresar result[]
+
+FIN
+
+
+
+getSmallestAndLargest
+
+INICIO
+
+Variables
+	string s, aux
+	short k, i = 1, j
+	string divide[]
+	bool isSort
+
+divide[] = divideChain(s)
+
+hacer:
+	i = i + 1
+
+	isSort = true
+
+	Para(j = 0) Hasta(j< divide.length-1;) Con(i=i+1)
+		
+		Si (divide[j] > divide[j + 1])
+			isSort = false
+
+			aux = divide[j]
+			divide[j] = divide[j+1]
+			divide[j+1] = aux
+
+		Fin Si
+	Fin Para
+mientras (i<divide.length) || ordenado = false
+
+regresar divide[0]  + "\n" + divide[divide.length-1]
