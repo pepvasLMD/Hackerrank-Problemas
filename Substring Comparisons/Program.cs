@@ -28,33 +28,27 @@ namespace Substring_Comparisons
 
         static string getSmallestAndLargest(string s, short k)
         {
-            string aux;
-            short i = 1, j;
-            bool isSort;
+            string smallString, largestString;
+            short i;
             string[] divide = divideChain(s, k);
 
-            do
+            smallString = divide[0];
+            largestString = divide[0];
+
+            for (i = 0; i < divide.Length; i++)
             {
-                i++;
-                isSort = true;
-
-                for (j = 0; j < divide.Length - 1; j++)
+                if (smallString.CompareTo(divide[i]) > 0)
                 {
-                    if (divide[j].CompareTo(divide[j + 1]) > 0)
-                    {
-                        isSort = false;
-
-                        aux = divide[j];
-                        divide[j] = divide[j + 1];
-                        divide[j + 1] = aux;
-                    }
+                    smallString = divide[i];
                 }
 
-
+                if (largestString.CompareTo(divide[i]) < 0)
+                {
+                    largestString = divide[i];
+                }
             }
-            while (i < divide.Length || isSort == false);
 
-            return divide[0] + "\n" + divide[divide.Length-1];
+            return smallString + "\n" + largestString;
         }
     }
 }

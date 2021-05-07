@@ -52,29 +52,24 @@ getSmallestAndLargest
 INICIO
 
 Variables
-	string s, aux
-	short k, i = 1, j
+	string s, smallString, largestString
+	short i, k;
 	string divide[]
-	bool isSort
 
 divide[] = divideChain(s, k)
+smallString = divide[0]
+largestString = divide[0]
 
-hacer:
-	i = i + 1
+Para(j = 0) Hasta(j< divide.length;) Con(i=i+1)
+	Si (smallString > divide[i])
+		smallString = divide[i]
+	Fin si
+	
+	Si (largestString < divide[i])
+		largestString = divide[i]
+	Fin si
+Fin Para
 
-	isSort = true
+regresar smallString + "\n" + largestString
 
-	Para(j = 0) Hasta(j< divide.length-1;) Con(i=i+1)
-		
-		Si (divide[j] > divide[j + 1])
-			isSort = false
-
-			aux = divide[j]
-			divide[j] = divide[j+1]
-			divide[j+1] = aux
-
-		Fin Si
-	Fin Para
-mientras (i<divide.length) || ordenado = false
-
-regresar divide[0]  + "\n" + divide[divide.length-1]
+FIN
