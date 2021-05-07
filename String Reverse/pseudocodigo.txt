@@ -1,0 +1,42 @@
+﻿Task
+
+A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward.
+
+Given a string A, print Yes if it is a palindrome, print No otherwise.
+
+
+Constraints
+
+A will consist at most 50 lower case english letters.
+
+
+Inicio
+
+Variables
+	string A;
+	int half, i=0;
+	bool isPalindrome = true;
+
+Leer (A)
+
+half = A.length / 2
+
+Si A.length == 0
+	isPalindrome = false
+
+mientras isPalindrome == true && i < half
+	
+	Si (A[i] != A[A.length - 1 - i])
+		isPalindrome = false
+
+	i++;
+
+Fin Mientras
+
+Si isPalindrome == true
+	Escribir("Yes if it is a palindrome")
+Si no
+	Escribir("No otherwise")
+Fin Si
+
+FIN
